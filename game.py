@@ -17,10 +17,25 @@ class Location():
         self.connections = connections
         
 
+
+'''
+This is for a bunch of variables
+'''
+
 forest = Location("forest","A scary, evil forest.")
 cave = Location("cave","A dark, damp cave.")
 castle = Location("castle","A regal castle.")
 city = Location("city","A busy city.")
+
+print(forest.name)
+
+#We are going to use a dictionary
+locations = {"forest" : Location("forest","A scary, evil forest."),
+"cave" : Location("cave","A dark, damp cave."),
+"castle" : Location("castle","A regal castle."),
+"city" : Location("city","A busy city.")}
+
+
 
 forest.set_connections([castle,city,cave])
 castle.set_connections([forest,city])
